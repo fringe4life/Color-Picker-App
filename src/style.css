@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+	--marengo: #4c5866;
+	--abe: #d6cfc7;
+	--header_dark: #1f2937;
+	--btn_dark: #3d4b60;
+	--name_text: #d5d4d8;
+	--name_text_light: #2b283a;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 500;
+	font-family: "Inter", serif;
+}
+* {
+	box-sizing: border-box;
+}
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto 0;
+	aspect-ratio: 9 / 10;
+	border-radius: 4px;
+}
+header {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 23px 15px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.inner-header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 10px;
+	width: 100%;
+}
+
+input {
+	border: 0.5px solid #d1d5db;
+}
+input,
+.select,
+.color-btn {
+	height: 42px;
+	cursor: pointer;
+}
+.select {
+	border: 1px solid #d1d5db;
+	color: #111827;
+	font-weight: 400;
+	font-size: 16px;
+	border-radius: 6px;
+	padding: 9px 13px;
+}
+.color-btn {
+	width: 100%;
+	margin: 0;
+	background-color: white;
+	font-size: 12px;
+	border-radius: 4px;
+	border: 1px solid #d1d5db;
+}
+main {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 10%;
+	background-color: white;
+}
+.color-div,
+.name-div {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+}
+.color-div div,
+.name-div p {
+	cursor: pointer;
+}
+.name-div p {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+@media (min-width: 760px) {
+	.container {
+		aspect-ratio: 1 / 1;
+		max-width: 700px;
+		max-height: 700px;
+	}
+	header {
+		height: 90px;
+	}
+	form {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.color-btn {
+		width: 30%;
+	}
+}
