@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     
     <link rel="stylesheet" href="style.css">
-    <title>My scheme Generator</title>
+    <title>My Scheme Generator</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
@@ -42,7 +42,7 @@
                     </button>
                 
                     <div id="dropdownMenu" class="absolute  w-full bg-white dark:bg-header_dark shadow-md rounded-md hidden">
-                        <ul class="text-[#111827] dark:text-white role="menu">
+                        <ul class="text-black dark:text-white role='menu'">
                             <li role="menuitem" tabindex="0" class="relative p-2 hover:font-bold cursor-pointer flex items-center justify-between group" data-value="monochrome">Monochrome
                             <img src="images/Check_dark.png" class="checkmark  hidden group-hover:block w-5 h-5">
                             </li>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-                <button class="color-btn dark:bg-btn_dark dark:border-none">Get color scheme</button>
+                <button class="color-btn text-black dark:bg-btn_dark dark:border-none">Get color scheme</button>
             </form>
     </header>
     <main>
@@ -86,8 +86,6 @@
                 <p class="text-lg">copied to clipboard</p>
         </div>
     </div>
-    
-    <script src="config.js"></script>
-    <script src="index.js"></script>
+    <script src="/src/index.js"></script>
 </body>
 </html>
